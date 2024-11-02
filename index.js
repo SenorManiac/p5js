@@ -12,6 +12,7 @@ async function retrieveWeather() {
 }
 
 function displayWeather(data) {
+    let input = document.getElementById('city')
     let city = data.resolvedAddress
     let weather = data.days[0].conditions
     let temp = data.days[0].temp
@@ -23,6 +24,7 @@ function displayWeather(data) {
                                 <p>Temperature: ${temp}°F</p>
                                 <p>Humidity: ${humidity}%</p>
                                 <p>Wind: ${wind} km/h</p>`
+    input.value = city
 }
 
 function checkSubmitValue(e) {
