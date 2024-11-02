@@ -7,6 +7,7 @@ async function retrieveWeather() {
     const url = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?key=${key}`
     const response = await fetch(url)
     const data = await response.json()
+    .catch(err => {alert(`I can't believe you thought ${city} was a real place. Try again.`)})
     console.log(data)
     displayWeather(data)
 }
