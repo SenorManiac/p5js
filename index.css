@@ -16,6 +16,7 @@ body{
     margin-top: 3rem;
     color: #fff;
     font-weight: bolder
+    flex: 1;
 }
 #child{
     display: flex;
@@ -62,4 +63,23 @@ body{
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #000;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: underline;
 }
